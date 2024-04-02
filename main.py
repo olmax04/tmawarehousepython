@@ -1,9 +1,6 @@
 # Created by olmax04
-from windows.MainWindow import MainWindow
-from windows.LoginDialog import LoginDialog
+from Application import Application
 
 if __name__ == "__main__":
-    root = MainWindow()
-    root.withdraw()
-    login = LoginDialog(root)
-    root.mainloop()
+    app = Application()
+    app.start()
